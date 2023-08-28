@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--0BSD license-->
+<html>
+<head>
+    <title>FireStorage bridge</title>
+</head>
+<body>
+<h1>Easy firestorage.jp Uploader</h1>
+<!--Edit next line to change endpoint-->
+<form action="https://server39.firestorage.jp/upload.cgi" method="POST" enctype="multipart/form-data" target="_blank">
+    <input type="hidden" name="jqueryupload" value="1">
+    <input type="hidden" name="expire" value="0">
+    <input type="file" name="Filename" required>
+    <br><br>
+    <input type="submit" value="Upload">
+    Firestorage.jp supports files up to 2GiB in size.
+</form>
+<p>A POST endpoint has been hardcoded to stay in pure HTML. It most likely works, but you should
+    check for a working endpoint by clicking the following link.
+    You can then pen devtools and change the "action" address to the one provided by the API. <br>
+    <a href="https://firestorage.jp/jsup.cgi" target="_blank">https://firestorage.jp/jsup.cgi</a>
+</p>
+<p>Once the upload is finished, you will receive a URL-encoded response.
+    Paste it into <a href="https://www.urldecoder.org/" target="_blank">urldecoder.org</a> and decode.
+    The download link is enclosed in quotes and begins with <code>http://firestorage.jp/download/</code>.
+    You can share this link.
+</p>
+</body>
+</html>

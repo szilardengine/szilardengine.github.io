@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--0BSD license-->
+<html>
+<head>
+    <title>Jirafeau Bridge (Epora)</title>
+</head>
+<body>
+<h1>Easy Jirafeau Uploader</h1>
+<h2>Instance: epora.fr</h2>
+<form action="https://www.epora.fr/ET/script.php" method="POST" enctype="multipart/form-data" target="_blank">
+    <input type="hidden" name="time" value="month">
+    <input type="file" name="file" required>
+    <br><br>
+    <input type="submit" value="Upload">
+    Epora.fr supports files up to 1024MB. Files will expire after 30 days.
+</form>
+<p>
+Construct the direct download link using the code on the first line of the response:
+<br><code>https://www.epora.fr/ET/f.php?h=[code here]&d=1</code>
+</p>
+</body>
+</html>
